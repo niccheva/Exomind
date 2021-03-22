@@ -6,7 +6,7 @@
 //
 
 public protocol PhotoInteractorInterface {
-    func getPhotos(albumId: Int, handler: @escaping ([PhotoEntity]) -> ())
+    func getPhotos(userId: Int, albumId: Int, handler: @escaping ([PhotoEntity]) -> ())
 }
 
 public class PhotoInteractor: PhotoInteractorInterface {
@@ -16,7 +16,7 @@ public class PhotoInteractor: PhotoInteractorInterface {
         self.photoDomainRepo = photoDomainRepo
     }
 
-    public func getPhotos(albumId: Int, handler: @escaping ([PhotoEntity]) -> ()) {
-        photoDomainRepo.getPhotos(albumId: albumId, handler: handler)
+    public func getPhotos(userId: Int, albumId: Int, handler: @escaping ([PhotoEntity]) -> ()) {
+        photoDomainRepo.getPhotos(userId: userId, albumId: albumId, handler: handler)
     }
 }

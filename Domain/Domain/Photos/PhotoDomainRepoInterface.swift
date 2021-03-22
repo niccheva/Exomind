@@ -6,5 +6,5 @@
 //
 
 public protocol PhotoDomainRepoInterface {
-    func getPhotos(albumId: Int, handler: ([PhotoEntity]) -> ())
+    func getPhotos(userId: Int, albumId: Int, handler: @escaping ([PhotoEntity]) -> ())
 }
