@@ -14,6 +14,9 @@
 		3884FC7D260650AC00F432B2 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3884FC7B260650AC00F432B2 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3884FCA3260657B000F432B2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FCA2260657B000F432B2 /* UserViewModel.swift */; };
 		3884FCA62606586300F432B2 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FCA52606586300F432B2 /* UserView.swift */; };
+		3884FD312608A83200F432B2 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD302608A83200F432B2 /* AlbumViewModel.swift */; };
+		3884FD342608AB1000F432B2 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD332608AB1000F432B2 /* AlbumView.swift */; };
+		3884FD382608AC5500F432B2 /* AppDependenciesInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD372608AC5500F432B2 /* AppDependenciesInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		3884FC7B260650AC00F432B2 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3884FCA2260657B000F432B2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		3884FCA52606586300F432B2 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		3884FD302608A83200F432B2 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		3884FD332608AB1000F432B2 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
+		3884FD372608AC5500F432B2 /* AppDependenciesInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		3884FC0426064FA100F432B2 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3884FD362608AC4000F432B2 /* Common */,
+				3884FD2F2608A82700F432B2 /* Albums */,
 				3884FCA12606572400F432B2 /* Users */,
 				3884FC0526064FA100F432B2 /* Presentation.h */,
 				3884FC0626064FA100F432B2 /* Info.plist */,
@@ -125,6 +133,23 @@
 				3884FCA52606586300F432B2 /* UserView.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		3884FD2F2608A82700F432B2 /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				3884FD302608A83200F432B2 /* AlbumViewModel.swift */,
+				3884FD332608AB1000F432B2 /* AlbumView.swift */,
+			);
+			path = Albums;
+			sourceTree = "<group>";
+		};
+		3884FD362608AC4000F432B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3884FD372608AC5500F432B2 /* AppDependenciesInterface.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +262,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3884FD312608A83200F432B2 /* AlbumViewModel.swift in Sources */,
 				3884FCA3260657B000F432B2 /* UserViewModel.swift in Sources */,
+				3884FD342608AB1000F432B2 /* AlbumView.swift in Sources */,
 				3884FCA62606586300F432B2 /* UserView.swift in Sources */,
+				3884FD382608AC5500F432B2 /* AppDependenciesInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

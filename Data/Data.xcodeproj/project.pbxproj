@@ -19,6 +19,11 @@
 		3884FCE62606726400F432B2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FCE52606726400F432B2 /* CoreDataManager.swift */; };
 		3884FCF02606820B00F432B2 /* UserLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FCEF2606820B00F432B2 /* UserLocalDataSource.swift */; };
 		3884FCF326068FB300F432B2 /* UserDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FCF226068FB300F432B2 /* UserDataRepo.swift */; };
+		3884FD1F2608A08300F432B2 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD1E2608A08300F432B2 /* AlbumModel.swift */; };
+		3884FD232608A24400F432B2 /* AlbumProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD222608A24400F432B2 /* AlbumProvider.swift */; };
+		3884FD262608A3C400F432B2 /* AlbumRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD252608A3C400F432B2 /* AlbumRemoteDataSource.swift */; };
+		3884FD292608A4CF00F432B2 /* AlbumLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD282608A4CF00F432B2 /* AlbumLocalDataSource.swift */; };
+		3884FD2C2608A69200F432B2 /* AlbumDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD2B2608A69200F432B2 /* AlbumDataRepo.swift */; };
 		E63635AB40B3A792368854BB /* Pods_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 163315CC77D157CE833ED0BD /* Pods_Data.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +70,11 @@
 		3884FCE52606726400F432B2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		3884FCEF2606820B00F432B2 /* UserLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataSource.swift; sourceTree = "<group>"; };
 		3884FCF226068FB300F432B2 /* UserDataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataRepo.swift; sourceTree = "<group>"; };
+		3884FD1E2608A08300F432B2 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		3884FD222608A24400F432B2 /* AlbumProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumProvider.swift; sourceTree = "<group>"; };
+		3884FD252608A3C400F432B2 /* AlbumRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRemoteDataSource.swift; sourceTree = "<group>"; };
+		3884FD282608A4CF00F432B2 /* AlbumLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumLocalDataSource.swift; sourceTree = "<group>"; };
+		3884FD2B2608A69200F432B2 /* AlbumDataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDataRepo.swift; sourceTree = "<group>"; };
 		6D8706CE3591A2053B0E0078 /* Pods-Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.release.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.release.xcconfig"; sourceTree = "<group>"; };
 		E0928702DC5B661F5DB5C27A /* Pods-Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.debug.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,8 +103,8 @@
 		3884FC4426064FCC00F432B2 = {
 			isa = PBXGroup;
 			children = (
-				3884FCE42606721A00F432B2 /* Common */,
 				3884FCE02606721200F432B2 /* Data.xcdatamodeld */,
+				3884FCE42606721A00F432B2 /* Common */,
 				3884FC5026064FCC00F432B2 /* Data */,
 				3884FC5B26064FCC00F432B2 /* DataTests */,
 				3884FC4F26064FCC00F432B2 /* Products */,
@@ -115,6 +125,7 @@
 		3884FC5026064FCC00F432B2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3884FD1D2608A06300F432B2 /* Albums */,
 				3884FCA82606599700F432B2 /* Users */,
 				3884FC5126064FCC00F432B2 /* Data.h */,
 				3884FC5226064FCC00F432B2 /* Info.plist */,
@@ -161,6 +172,18 @@
 				3884FCE52606726400F432B2 /* CoreDataManager.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		3884FD1D2608A06300F432B2 /* Albums */ = {
+			isa = PBXGroup;
+			children = (
+				3884FD1E2608A08300F432B2 /* AlbumModel.swift */,
+				3884FD222608A24400F432B2 /* AlbumProvider.swift */,
+				3884FD252608A3C400F432B2 /* AlbumRemoteDataSource.swift */,
+				3884FD282608A4CF00F432B2 /* AlbumLocalDataSource.swift */,
+				3884FD2B2608A69200F432B2 /* AlbumDataRepo.swift */,
+			);
+			path = Albums;
 			sourceTree = "<group>";
 		};
 		8D84DBCA8C8039D6F5321448 /* Pods */ = {
@@ -310,11 +333,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3884FCAA260659A300F432B2 /* UserModel.swift in Sources */,
+				3884FD292608A4CF00F432B2 /* AlbumLocalDataSource.swift in Sources */,
 				3884FCF02606820B00F432B2 /* UserLocalDataSource.swift in Sources */,
 				3884FCB026065C4C00F432B2 /* UserProvider.swift in Sources */,
 				3884FCAD26065C2F00F432B2 /* UserRemoteDataSource.swift in Sources */,
 				3884FCE62606726400F432B2 /* CoreDataManager.swift in Sources */,
+				3884FD1F2608A08300F432B2 /* AlbumModel.swift in Sources */,
+				3884FD2C2608A69200F432B2 /* AlbumDataRepo.swift in Sources */,
+				3884FD232608A24400F432B2 /* AlbumProvider.swift in Sources */,
 				3884FCF326068FB300F432B2 /* UserDataRepo.swift in Sources */,
+				3884FD262608A3C400F432B2 /* AlbumRemoteDataSource.swift in Sources */,
 				3884FCE22606721200F432B2 /* Data.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
