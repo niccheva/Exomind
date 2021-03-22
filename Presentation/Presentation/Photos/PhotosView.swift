@@ -17,7 +17,7 @@ struct PhotoView: View {
 
     var body: some View {
         List(viewModel.photos) { photo in
-            Text(photo.title)
+            PhotoCell(photo: photo)
         } // List
         .navigationBarTitle(Text(album.title))
         .onAppear(perform: viewModel.getPhotos)
@@ -28,6 +28,21 @@ struct PhotoView: View {
         self.album = album
         self.appDependencies = appDependencies
         self.viewModel = viewModel
+    }
+}
+
+struct PhotoCell: View {
+    let photo: PhotoEntity
+
+    var body: some View {
+        VStack {
+            Text(photo.title)
+            RemoteImage(url: photo.url)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .shadow(radius: 10)
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(.black)
+        } // VStack
     }
 }
 

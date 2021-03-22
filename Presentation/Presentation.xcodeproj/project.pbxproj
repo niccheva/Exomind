@@ -19,6 +19,7 @@
 		3884FD382608AC5500F432B2 /* AppDependenciesInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD372608AC5500F432B2 /* AppDependenciesInterface.swift */; };
 		3884FD702608CF1F00F432B2 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD6F2608CF1F00F432B2 /* PhotoViewModel.swift */; };
 		3884FD732608CF8B00F432B2 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD722608CF8B00F432B2 /* PhotosView.swift */; };
+		3884FD7A2608D38E00F432B2 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD792608D38E00F432B2 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		3884FD372608AC5500F432B2 /* AppDependenciesInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesInterface.swift; sourceTree = "<group>"; };
 		3884FD6F2608CF1F00F432B2 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		3884FD722608CF8B00F432B2 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		3884FD792608D38E00F432B2 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				3884FD372608AC5500F432B2 /* AppDependenciesInterface.swift */,
+				3884FD792608D38E00F432B2 /* RemoteImage.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				3884FD312608A83200F432B2 /* AlbumViewModel.swift in Sources */,
 				3884FD702608CF1F00F432B2 /* PhotoViewModel.swift in Sources */,
 				3884FCA3260657B000F432B2 /* UserViewModel.swift in Sources */,
+				3884FD7A2608D38E00F432B2 /* RemoteImage.swift in Sources */,
 				3884FD732608CF8B00F432B2 /* PhotosView.swift in Sources */,
 				3884FD342608AB1000F432B2 /* AlbumView.swift in Sources */,
 				3884FCA62606586300F432B2 /* UserView.swift in Sources */,
