@@ -7,5 +7,5 @@
 
 public protocol AppDependenciesInterface {
     func resolveUserDependencies() -> UserViewModel
-    func resolveAlbumDependencies() -> AlbumViewModel
+    func resolveAlbumDependencies(userId: Int) -> AlbumViewModel
 }

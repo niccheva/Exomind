@@ -18,7 +18,7 @@ struct AlbumView: View {
         List(viewModel.albums) { album in
             NavigationLink(destination: Text("Album")) {
                 Text(album.title)
-            }
+            } // NavigationLink
         } // List
         .navigationBarTitle(Text("\(user.username)'s Albums"))
         .onAppear(perform: viewModel.getAlbums)

@@ -10,15 +10,16 @@ import Domain
 
 public struct UserView: View {
     @ObservedObject var viewModel: UserViewModel
-
     @State private var searchText = ""
+
+    let appDependencies: AppDependenciesInterface
 
     public var body: some View {
         NavigationView {
             VStack {
                 SearchBar(text: $searchText)
                 List(viewModel.users.filter { searchText.isEmpty ? true : $0.username.lowercased().contains(searchText) }) { user in
-                    NavigationLink(destination: Text("Details")) {
+                    NavigationLink(destination: AlbumView(user: user, appDependencies: appDependencies, viewModel: appDependencies.resolveAlbumDependencies(userId: user.id))) {
                         UserCell(user: user)
                     } // NavigationLink
                 } // List
@@ -28,7 +29,8 @@ public struct UserView: View {
         .onAppear(perform: viewModel.getUsers)
     }
 
-    public init(viewModel: UserViewModel) {
+    public init(appDependencies: AppDependenciesInterface, viewModel: UserViewModel) {
+        self.appDependencies = appDependencies
         self.viewModel = viewModel
     }
 }

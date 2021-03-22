@@ -7,8 +7,12 @@
 
 import Presentation
 
-class AppDependencies {
+class AppDependencies: AppDependenciesInterface {
     func resolveUserDependencies() -> UserViewModel {
         UserDependencies().resolve()
+    }
+
+    func resolveAlbumDependencies(userId: Int) -> AlbumViewModel {
+        AlbumDependencies().resolve(userId: userId)
     }
 }
