@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4FE6F48F9BF982E7C3DB64 /* Pods_Exomind_ExomindUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C854CAD854BD1D2C65D67C /* Pods_Exomind_ExomindUITests.framework */; };
 		3884FBA826064A4C00F432B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FBA726064A4C00F432B2 /* AppDelegate.swift */; };
 		3884FBAA26064A4C00F432B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FBA926064A4C00F432B2 /* SceneDelegate.swift */; };
 		3884FBAC26064A4C00F432B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FBAB26064A4C00F432B2 /* ContentView.swift */; };
@@ -15,6 +16,16 @@
 		3884FBB426064A4D00F432B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3884FBB226064A4D00F432B2 /* LaunchScreen.storyboard */; };
 		3884FBBF26064A4D00F432B2 /* ExomindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FBBE26064A4D00F432B2 /* ExomindTests.swift */; };
 		3884FBCA26064A4D00F432B2 /* ExomindUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FBC926064A4D00F432B2 /* ExomindUITests.swift */; };
+		3884FC732606504E00F432B2 /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3884FC702606504E00F432B2 /* Data.framework */; };
+		3884FC742606504E00F432B2 /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3884FC702606504E00F432B2 /* Data.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3884FC752606504E00F432B2 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3884FC712606504E00F432B2 /* Domain.framework */; };
+		3884FC762606504E00F432B2 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3884FC712606504E00F432B2 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3884FC772606504E00F432B2 /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3884FC722606504E00F432B2 /* Presentation.framework */; };
+		3884FC782606504E00F432B2 /* Presentation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3884FC722606504E00F432B2 /* Presentation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3884FCF72606980A00F432B2 /* UserDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FCF62606980A00F432B2 /* UserDependencies.swift */; };
+		3884FD082606994E00F432B2 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD072606994E00F432B2 /* AppDependencies.swift */; };
+		5656ADCD8A76F9EB971BA8F2 /* Pods_Exomind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139A709877FF3E689D728938 /* Pods_Exomind.framework */; };
+		6853E65E653742B65A954DE0 /* Pods_ExomindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402EBBF09FEA3AAAC5B4327F /* Pods_ExomindTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +45,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3884FC792606504E00F432B2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3884FC762606504E00F432B2 /* Domain.framework in Embed Frameworks */,
+				3884FC742606504E00F432B2 /* Data.framework in Embed Frameworks */,
+				3884FC782606504E00F432B2 /* Presentation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0BFD7AEBA2E0E5757EA913D5 /* Pods-Exomind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exomind.debug.xcconfig"; path = "Target Support Files/Pods-Exomind/Pods-Exomind.debug.xcconfig"; sourceTree = "<group>"; };
+		139A709877FF3E689D728938 /* Pods_Exomind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exomind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C8B3CECEFED1D433FC6AED3 /* Pods-Exomind-ExomindUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exomind-ExomindUITests.release.xcconfig"; path = "Target Support Files/Pods-Exomind-ExomindUITests/Pods-Exomind-ExomindUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3884FBA426064A4C00F432B2 /* Exomind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exomind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3884FBA726064A4C00F432B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3884FBA926064A4C00F432B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +79,17 @@
 		3884FBC526064A4D00F432B2 /* ExomindUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExomindUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3884FBC926064A4D00F432B2 /* ExomindUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExomindUITests.swift; sourceTree = "<group>"; };
 		3884FBCB26064A4D00F432B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3884FC702606504E00F432B2 /* Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3884FC712606504E00F432B2 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3884FC722606504E00F432B2 /* Presentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Presentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3884FCF62606980A00F432B2 /* UserDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDependencies.swift; sourceTree = "<group>"; };
+		3884FD072606994E00F432B2 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		402EBBF09FEA3AAAC5B4327F /* Pods_ExomindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExomindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813A5B9E9434CECD467E8F6B /* Pods-Exomind-ExomindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exomind-ExomindUITests.debug.xcconfig"; path = "Target Support Files/Pods-Exomind-ExomindUITests/Pods-Exomind-ExomindUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8702F6CD1797A988F60D6173 /* Pods-Exomind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exomind.release.xcconfig"; path = "Target Support Files/Pods-Exomind/Pods-Exomind.release.xcconfig"; sourceTree = "<group>"; };
+		D8F35EEB86746C5F1AE90691 /* Pods-ExomindTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExomindTests.debug.xcconfig"; path = "Target Support Files/Pods-ExomindTests/Pods-ExomindTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7C854CAD854BD1D2C65D67C /* Pods_Exomind_ExomindUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exomind_ExomindUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE950F46729B69D903C20E61 /* Pods-ExomindTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExomindTests.release.xcconfig"; path = "Target Support Files/Pods-ExomindTests/Pods-ExomindTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3884FC752606504E00F432B2 /* Domain.framework in Frameworks */,
+				3884FC732606504E00F432B2 /* Data.framework in Frameworks */,
+				3884FC772606504E00F432B2 /* Presentation.framework in Frameworks */,
+				5656ADCD8A76F9EB971BA8F2 /* Pods_Exomind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6853E65E653742B65A954DE0 /* Pods_ExomindTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +116,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A4FE6F48F9BF982E7C3DB64 /* Pods_Exomind_ExomindUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191D8B2F7AE750587D35D85E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD7AEBA2E0E5757EA913D5 /* Pods-Exomind.debug.xcconfig */,
+				8702F6CD1797A988F60D6173 /* Pods-Exomind.release.xcconfig */,
+				813A5B9E9434CECD467E8F6B /* Pods-Exomind-ExomindUITests.debug.xcconfig */,
+				2C8B3CECEFED1D433FC6AED3 /* Pods-Exomind-ExomindUITests.release.xcconfig */,
+				D8F35EEB86746C5F1AE90691 /* Pods-ExomindTests.debug.xcconfig */,
+				EE950F46729B69D903C20E61 /* Pods-ExomindTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3884FB9B26064A4C00F432B2 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				3884FBBD26064A4D00F432B2 /* ExomindTests */,
 				3884FBC826064A4D00F432B2 /* ExomindUITests */,
 				3884FBA526064A4C00F432B2 /* Products */,
+				191D8B2F7AE750587D35D85E /* Pods */,
+				4CCCAB6AC7CAAEFAA10AFA63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +161,7 @@
 		3884FBA626064A4C00F432B2 /* Exomind */ = {
 			isa = PBXGroup;
 			children = (
+				3884FCF5260697FB00F432B2 /* Dependencies */,
 				3884FBA726064A4C00F432B2 /* AppDelegate.swift */,
 				3884FBA926064A4C00F432B2 /* SceneDelegate.swift */,
 				3884FBAB26064A4C00F432B2 /* ContentView.swift */,
@@ -136,6 +199,28 @@
 			path = ExomindUITests;
 			sourceTree = "<group>";
 		};
+		3884FCF5260697FB00F432B2 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				3884FCF62606980A00F432B2 /* UserDependencies.swift */,
+				3884FD072606994E00F432B2 /* AppDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		4CCCAB6AC7CAAEFAA10AFA63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3884FC702606504E00F432B2 /* Data.framework */,
+				3884FC712606504E00F432B2 /* Domain.framework */,
+				3884FC722606504E00F432B2 /* Presentation.framework */,
+				139A709877FF3E689D728938 /* Pods_Exomind.framework */,
+				E7C854CAD854BD1D2C65D67C /* Pods_Exomind_ExomindUITests.framework */,
+				402EBBF09FEA3AAAC5B4327F /* Pods_ExomindTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3884FBCE26064A4D00F432B2 /* Build configuration list for PBXNativeTarget "Exomind" */;
 			buildPhases = (
+				4F37AC7F9D8FE0BC5616A640 /* [CP] Check Pods Manifest.lock */,
 				3884FBA026064A4C00F432B2 /* Sources */,
 				3884FBA126064A4C00F432B2 /* Frameworks */,
 				3884FBA226064A4C00F432B2 /* Resources */,
+				3884FC792606504E00F432B2 /* Embed Frameworks */,
+				1A060290D329D92808644D4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3884FBD126064A4D00F432B2 /* Build configuration list for PBXNativeTarget "ExomindTests" */;
 			buildPhases = (
+				F74C8CCC0E55C3EBABE05730 /* [CP] Check Pods Manifest.lock */,
 				3884FBB626064A4D00F432B2 /* Sources */,
 				3884FBB726064A4D00F432B2 /* Frameworks */,
 				3884FBB826064A4D00F432B2 /* Resources */,
@@ -178,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3884FBD426064A4D00F432B2 /* Build configuration list for PBXNativeTarget "ExomindUITests" */;
 			buildPhases = (
+				56CCBA43733D10D54E8CBE57 /* [CP] Check Pods Manifest.lock */,
 				3884FBC126064A4D00F432B2 /* Sources */,
 				3884FBC226064A4D00F432B2 /* Frameworks */,
 				3884FBC326064A4D00F432B2 /* Resources */,
+				37A5111F04D025B030DAD335 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +352,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A060290D329D92808644D4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exomind/Pods-Exomind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exomind/Pods-Exomind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Exomind/Pods-Exomind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37A5111F04D025B030DAD335 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exomind-ExomindUITests/Pods-Exomind-ExomindUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Exomind-ExomindUITests/Pods-Exomind-ExomindUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Exomind-ExomindUITests/Pods-Exomind-ExomindUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F37AC7F9D8FE0BC5616A640 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Exomind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56CCBA43733D10D54E8CBE57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Exomind-ExomindUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F74C8CCC0E55C3EBABE05730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExomindTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3884FBA026064A4C00F432B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,6 +463,8 @@
 				3884FBA826064A4C00F432B2 /* AppDelegate.swift in Sources */,
 				3884FBAA26064A4C00F432B2 /* SceneDelegate.swift in Sources */,
 				3884FBAC26064A4C00F432B2 /* ContentView.swift in Sources */,
+				3884FD082606994E00F432B2 /* AppDependencies.swift in Sources */,
+				3884FCF72606980A00F432B2 /* UserDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +629,7 @@
 		};
 		3884FBCF26064A4D00F432B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BFD7AEBA2E0E5757EA913D5 /* Pods-Exomind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -453,6 +650,7 @@
 		};
 		3884FBD026064A4D00F432B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8702F6CD1797A988F60D6173 /* Pods-Exomind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -473,6 +671,7 @@
 		};
 		3884FBD226064A4D00F432B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F35EEB86746C5F1AE90691 /* Pods-ExomindTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +693,7 @@
 		};
 		3884FBD326064A4D00F432B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE950F46729B69D903C20E61 /* Pods-ExomindTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +715,7 @@
 		};
 		3884FBD526064A4D00F432B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 813A5B9E9434CECD467E8F6B /* Pods-Exomind-ExomindUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +735,7 @@
 		};
 		3884FBD626064A4D00F432B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C8B3CECEFED1D433FC6AED3 /* Pods-Exomind-ExomindUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
