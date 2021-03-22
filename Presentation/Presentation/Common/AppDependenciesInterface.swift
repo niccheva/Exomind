@@ -8,4 +8,5 @@
 public protocol AppDependenciesInterface {
     func resolveUserDependencies() -> UserViewModel
     func resolveAlbumDependencies(userId: Int) -> AlbumViewModel
+    func resolvePhotoDependencies(userId: Int, albumId: Int) -> PhotoViewModel
 }

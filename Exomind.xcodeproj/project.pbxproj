@@ -25,6 +25,7 @@
 		3884FCF72606980A00F432B2 /* UserDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FCF62606980A00F432B2 /* UserDependencies.swift */; };
 		3884FD082606994E00F432B2 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD072606994E00F432B2 /* AppDependencies.swift */; };
 		3884FD3C2608AF6300F432B2 /* AlbumDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD3B2608AF6300F432B2 /* AlbumDependencies.swift */; };
+		3884FD762608D18900F432B2 /* PhotoDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3884FD752608D18900F432B2 /* PhotoDependencies.swift */; };
 		5656ADCD8A76F9EB971BA8F2 /* Pods_Exomind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139A709877FF3E689D728938 /* Pods_Exomind.framework */; };
 		6853E65E653742B65A954DE0 /* Pods_ExomindTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402EBBF09FEA3AAAC5B4327F /* Pods_ExomindTests.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		3884FCF62606980A00F432B2 /* UserDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDependencies.swift; sourceTree = "<group>"; };
 		3884FD072606994E00F432B2 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		3884FD3B2608AF6300F432B2 /* AlbumDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDependencies.swift; sourceTree = "<group>"; };
+		3884FD752608D18900F432B2 /* PhotoDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDependencies.swift; sourceTree = "<group>"; };
 		402EBBF09FEA3AAAC5B4327F /* Pods_ExomindTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExomindTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		813A5B9E9434CECD467E8F6B /* Pods-Exomind-ExomindUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exomind-ExomindUITests.debug.xcconfig"; path = "Target Support Files/Pods-Exomind-ExomindUITests/Pods-Exomind-ExomindUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8702F6CD1797A988F60D6173 /* Pods-Exomind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exomind.release.xcconfig"; path = "Target Support Files/Pods-Exomind/Pods-Exomind.release.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				3884FCF62606980A00F432B2 /* UserDependencies.swift */,
 				3884FD072606994E00F432B2 /* AppDependencies.swift */,
 				3884FD3B2608AF6300F432B2 /* AlbumDependencies.swift */,
+				3884FD752608D18900F432B2 /* PhotoDependencies.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 				3884FD082606994E00F432B2 /* AppDependencies.swift in Sources */,
 				3884FD3C2608AF6300F432B2 /* AlbumDependencies.swift in Sources */,
 				3884FCF72606980A00F432B2 /* UserDependencies.swift in Sources */,
+				3884FD762608D18900F432B2 /* PhotoDependencies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

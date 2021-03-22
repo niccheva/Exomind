@@ -16,7 +16,15 @@ struct AlbumView: View {
 
     var body: some View {
         List(viewModel.albums) { album in
-            NavigationLink(destination: Text("Album")) {
+            NavigationLink(destination:
+                PhotoView(
+                    user: user,
+                    album: album,
+                    appDependencies: appDependencies,
+                    viewModel: appDependencies
+                        .resolvePhotoDependencies(userId: user.id, albumId: album.id)
+                )
+            ) {
                 Text(album.title)
             } // NavigationLink
         } // List
