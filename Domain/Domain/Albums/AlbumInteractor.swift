@@ -6,7 +6,7 @@
 //
 
 public protocol AlbumInteractorInterface {
-    func getAlbums(handler: @escaping ([AlbumEntity]) -> ())
+    func getAlbums(userId: Int, handler: @escaping ([AlbumEntity]) -> ())
 }
 
 public class AlbumInteractor: AlbumInteractorInterface {
@@ -16,7 +16,7 @@ public class AlbumInteractor: AlbumInteractorInterface {
         self.albumDomainRepo = albumDomainRepo
     }
 
-    public func getAlbums(handler: @escaping ([AlbumEntity]) -> ()) {
-        albumDomainRepo.getAlbums(handler: handler)
+    public func getAlbums(userId: Int, handler: @escaping ([AlbumEntity]) -> ()) {
+        albumDomainRepo.getAlbums(userId: userId, handler: handler)
     }
 }

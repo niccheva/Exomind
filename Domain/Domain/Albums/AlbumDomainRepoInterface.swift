@@ -6,5 +6,5 @@
 //
 
 public protocol AlbumDomainRepoInterface {
-    func getAlbums(handler: @escaping ([AlbumEntity]) -> ())
+    func getAlbums(userId: Int, handler: @escaping ([AlbumEntity]) -> ())
 }
