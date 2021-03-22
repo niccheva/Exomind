@@ -15,4 +15,8 @@ class AppDependencies: AppDependenciesInterface {
     func resolveAlbumDependencies(userId: Int) -> AlbumViewModel {
         AlbumDependencies().resolve(userId: userId)
     }
+
+    func resolvePhotoDependencies(userId: Int, albumId: Int) -> PhotoViewModel {
+        PhotoDependencies().resolve(userId: userId, albumId: albumId)
+    }
 }
