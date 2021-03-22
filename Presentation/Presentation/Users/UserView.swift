@@ -19,7 +19,14 @@ public struct UserView: View {
             VStack {
                 SearchBar(text: $searchText)
                 List(viewModel.users.filter { searchText.isEmpty ? true : $0.username.lowercased().contains(searchText) }) { user in
-                    NavigationLink(destination: AlbumView(user: user, appDependencies: appDependencies, viewModel: appDependencies.resolveAlbumDependencies(userId: user.id))) {
+                    NavigationLink(destination:
+                        AlbumView(
+                            user: user,
+                            appDependencies: appDependencies,
+                            viewModel: appDependencies
+                                .resolveAlbumDependencies(userId: user.id)
+                        )
+                    ) {
                         UserCell(user: user)
                     } // NavigationLink
                 } // List

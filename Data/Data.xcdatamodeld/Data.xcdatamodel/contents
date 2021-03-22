@@ -4,6 +4,11 @@
         <attribute name="id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" attributeType="String"/>
         <attribute name="userId" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="ManagedUser" representedClassName=".ManagedUser" syncable="YES" codeGenerationType="class">
         <attribute name="email" attributeType="String"/>
@@ -12,6 +17,11 @@
         <attribute name="phone" attributeType="String"/>
         <attribute name="username" attributeType="String"/>
         <attribute name="website" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
         <element name="ManagedUser" positionX="-54" positionY="-9" width="128" height="119"/>

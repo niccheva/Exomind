@@ -18,7 +18,7 @@ public class AlbumLocalDataSource: AlbumLocalDataSourceInterface {
     public func getAlbums(userId: Int, handler: @escaping ([AlbumModel]) -> ()) {
         let context = CoreDataManager.shared.context
         let request: NSFetchRequest<ManagedAlbum> = ManagedAlbum.fetchRequest()
-        request.predicate = NSPredicate(format: "userId = %@", userId)
+        request.predicate = NSPredicate(format: "userId == %d", userId)
 
         if let albums = try? context.fetch(request) {
             handler(albums.map { $0.model })

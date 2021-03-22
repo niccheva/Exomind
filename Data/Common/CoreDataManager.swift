@@ -24,5 +24,6 @@ class CoreDataManager {
                 fatalError("Can't load persistent stores: \(error)")
             }
         }
+        container.viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
     }
 }
